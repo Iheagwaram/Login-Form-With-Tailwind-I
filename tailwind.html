@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TAILWIND CLASS</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+    tailwind.config ={
+        theme:{
+            extend:{
+                colors:{
+                    ehis: '#FFF3B2',
+                    sydney: '#ffe0d8',
+                    ayo: '#ff9b93', 
+                }
+            }
+        }
+    }
+    
+    </script>
+</head>
+<body>
+    <main class="min-h-screen min-w-screen bg-lime-200 flex items-center justify-center">
+
+        <div class="form-container  border w-full h-screen">
+            <form action="" class="w-1/4 h-auto shadow-md p-5 rounded-md mx-auto mt-10 bg-white">
+                <div class="my-4 flex justify-between items-center">
+                    <label for="" class="text-lg">Email</label>
+                    <input type="email" class="bg-slate-300 active:outline outline-blue-100 p-1 rounded" required>
+                </div>
+
+                <div class="my-4 flex justify-between items-center">
+                    <label for="" class="text-lg">Password</label>
+                    <input type="password" class="bg-slate-300 outline-blue-100 p-1 rounded" required>
+                </div>
+
+                <div class="my-4 flex justify-between items-center">
+                    <input type="submit" value="Login" class=" text-white cursor-pointer bg-blue-300 py-1 hover:bg-blue-500 rounded w-full my-2 active:ring hover:ring" >
+                </div>
+
+                <div>
+                    <p class="text-center">Continu with:</p>
+                    <div class="flex flex-col gap-y-4">
+                        <button class="py-2 w-100 border active:outline outline-blue-200 hover:bg-blue-300 rounded"><i class="fa-brands fa-google "></i></button>
+                        <button class="py-2 w-100 border active:outline outline-blue-200 hover:bg-blue-300 rounded"><i class="fa-brands fa-linkedin"></i></button>
+                        <button class="py-2 w-100 border active:outline outline-blue-200 hover:bg-blue-300 rounded"><i class="fa-brands fa-github"></i></button>
+                    </div>
+                    
+                    
+
+                </div>
+
+            </form>
+        </div>
+
+    </main>
+</body>
+</html>
